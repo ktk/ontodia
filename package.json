@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/sputniq-space/ontodia#readme",
   "scripts": {
-    "demo": "./node_modules/.bin/webpack-dev-server --port 10444 --host 0.0.0.0  --public $EXTERNAL_HOSTNAME --config webpack.demo.config.js",
+    "demo": "./node_modules/.bin/webpack-dev-server --port 10444 --config webpack.demo.config.js",
+    "demo-public": "./node_modules/.bin/webpack-dev-server --port 10444 --host 0.0.0.0  --public $EXTERNAL_HOSTNAME --config webpack.demo.config.js",
     "build": "npm run _webpack && npm run typings",
     "build-all": "npm run _webpack && BUNDLE_PEERS=true npm run _webpack",
     "build-examples": "./node_modules/.bin/webpack --config webpack.demo.config.js",
